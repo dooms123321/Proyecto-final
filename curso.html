@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contenido del Curso</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <h1>Bienvenido al Curso de Programación Web</h1>
-      <p>
-        Este es un curso introductorio sobre el desarrollo de páginas web utilizando HTML, CSS y
-        JavaScript.
-      </p>
+        <h1>Bienvenido al Curso de Programación Web</h1>
+        <p>Este es un curso introductorio sobre el desarrollo de páginas web utilizando HTML, CSS y JavaScript.</p>
     </header>
 
     <section>
-      <h2>Contenido del Curso</h2>
-      <p>En este curso aprenderás:</p>
-      <ul>
-        <li>Introducción al desarrollo web</li>
-        <li>Fundamentos de HTML, CSS y JavaScript</li>
-        <li>Crear sitios web interactivos</li>
-      </ul>
+        <h2>Contenido del Curso</h2>
+        <p>En este curso aprenderás:</p>
+        <ul>
+            <li>Introducción al desarrollo web</li>
+            <li>Fundamentos de HTML, CSS y JavaScript</li>
+            <li>Crear sitios web interactivos</li>
+        </ul>
 
-      <h3>Recursos:</h3>
-      <p>
-        <a href="https://www.w3schools.com" target="_blank"
-          >W3Schools - Tutoriales de Programación Web</a
-        >
-      </p>
+        <h3>Recursos:</h3>
+        <p><a href="https://www.w3schools.com" target="_blank">W3Schools - Tutoriales de Programación Web</a></p>
 
-      <h3>Imágenes:</h3>
-      <img src="imagen-curso.jpg" alt="Imagen del Curso" width="300" />
+        <h3>Imágenes:</h3>
+        <img src="imagen-curso.jpg" alt="Imagen del Curso" width="300" />
 
-      <h3>Videos:</h3>
-      <video width="600" controls>
-        <source src="video-curso.mp4" type="video/mp4" />
-        Tu navegador no soporta el formato de video.
-      </video>
+        <h3>Videos:</h3>
+        <div>
+            <!-- Video 1 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/10GHKjgQIR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <!-- Video 2 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/riZbwRFMFuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <!-- Video 3 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8cSo0ijtkzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section>
-      <h2>Evaluación</h2>
-      <form id="evaluacion-form" onsubmit="return calificar()">
-        <p>1. ¿Qué es HTML?</p>
-        <input type="radio" name="pregunta1" value="a" /> Lenguaje de programación<br />
-        <input type="radio" name="pregunta1" value="b" /> Lenguaje de marcado<br />
-        <input type="radio" name="pregunta1" value="c" /> Sistema operativo<br />
+        <h2>Evaluación</h2>
+        <form id="evaluacion-form" onsubmit="return calificar()">
+            <p>1. ¿Qué es HTML?</p>
+            <input type="radio" name="pregunta1" value="a"> Lenguaje de programación<br>
+            <input type="radio" name="pregunta1" value="b"> Lenguaje de marcado<br>
+            <input type="radio" name="pregunta1" value="c"> Sistema operativo<br>
 
-        <p>2. ¿Qué etiqueta se usa para insertar imágenes?</p>
-        <input type="radio" name="pregunta2" value="a" /> <code>&lt;image&gt;</code><br />
-        <input type="radio" name="pregunta2" value="b" /> <code>&lt;img&gt;</code><br />
+            <p>2. ¿Qué etiqueta se usa para insertar imágenes?</p>
+            <input type="radio" name="pregunta2" value="a"> <code>&lt;image&gt;</code><br>
+            <input type="radio" name="pregunta2" value="b"> <code>&lt;img&gt;</code><br>
 
-        <p>3. Selecciona los lenguajes usados para el desarrollo web:</p>
-        <input type="checkbox" name="pregunta3" value="html" /> HTML<br />
-        <input type="checkbox" name="pregunta3" value="css" /> CSS<br />
-        <input type="checkbox" name="pregunta3" value="js" /> JavaScript<br />
+            <p>3. Selecciona los lenguajes usados para el desarrollo web:</p>
+            <input type="checkbox" name="pregunta3" value="html"> HTML<br>
+            <input type="checkbox" name="pregunta3" value="css"> CSS<br>
+            <input type="checkbox" name="pregunta3" value="js"> JavaScript<br>
 
-        <p>4. ¿Qué es JavaScript?</p>
-        <select name="pregunta4">
-          <option value="a">Lenguaje de programación</option>
-          <option value="b">Estilo para páginas web</option>
-          <option value="c">Editor de código</option>
-        </select>
+            <p>4. ¿Qué es JavaScript?</p>
+            <select name="pregunta4">
+                <option value="a">Lenguaje de programación</option>
+                <option value="b">Estilo para páginas web</option>
+                <option value="c">Editor de código</option>
+            </select>
 
-        <p>5. ¿Para qué sirve CSS?</p>
-        <textarea name="pregunta5"></textarea>
+            <p>5. ¿Para qué sirve CSS?</p>
+            <textarea name="pregunta5"></textarea>
 
-        <br />
-        <button type="submit">Enviar Respuestas</button>
-      </form>
+            <br>
+            <button type="submit">Enviar Respuestas</button>
+        </form>
 
-      <div id="resultado"></div>
+        <div id="resultado"></div>
     </section>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
