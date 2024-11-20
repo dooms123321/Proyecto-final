@@ -9,44 +9,40 @@
 <body>
     <header>
         <h1>Bienvenido al Curso de Programación Web</h1>
-        <p>Este es un curso aprendera que son y la utilizacion de HTML, CSS y JavaScript para la creacion de paginas web.</p>
+        <p>En este curso aprenderás qué son y cómo utilizar HTML, CSS y JavaScript para la creación de páginas web interactivas.</p>
     </header>
 
     <section>
         <h2>Contenido del Curso</h2>
-        <p> en este curso usted podra:</p>
+        <p>En este curso podrás:</p>
         <ul>
-            <li>Aprender los fundamentos de HTML, CSS y JavaScript</li>
-            <li> Evaluar su conocimiento en creacion de paginas web </li>
-            <li>Optener una mayor comprensión de los temas</li>
+            <li>Aprender los fundamentos de HTML, CSS y JavaScript.</li>
+            <li>Evaluar tu conocimiento en la creación de páginas web.</li>
+            <li>Obtener una mayor comprensión de estos lenguajes fundamentales.</li>
         </ul>
          
-        <p>Si desea aprender mas sobre el tema fuera del curso puede hacerlo desde aqui.</p>
-        <p><a href="https://www.w3schools.com" target="_blank">W3Schools - Tutoriales de Programación Web</a></p>
-        <p><a href="https://app.site123.com/manager/affiliate/abLandingOutsource.php?subject=&a=1&c_h=By+far+the+easiest+free+website+builder&utm_source=google&utm_medium=cpc&utm_campaign=17160938340&utm_adgroupID=137296782918&keyword=building%20a%20website&matchtype=p&network=g&placment=&target=&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7oZSmkKO4wiTLa3RLRbyILS_SLYRD0HuX4viMSWsWUesB2wHJg8qcUaAlgoEALw_wcB&l=en&landingSystem=1" target="_blank">SITE123 - Creador depaginas Web</a></p>
+        <p>Si deseas aprender más sobre estos temas fuera del curso, puedes acceder a los siguientes recursos:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Tutoriales de Programación Web</a></li>
+            <li><a href="https://app.site123.com/manager/affiliate/abLandingOutsource.php?subject=&a=1&c_h=By+far+the+easiest+free+website+builder&utm_source=google&utm_medium=cpc&utm_campaign=17160938340&utm_adgroupID=137296782918&keyword=building%20a%20website&matchtype=p&network=g&placment=&target=&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7oZSmkKO4wiTLa3RLRbyILS_SLYRD0HuX4viMSWsWUesB2wHJg8qcUaAlgoEALw_wcB&l=en&landingSystem=1" target="_blank">SITE123 - Creador de Páginas Web</a></li>
+        </ul>
 
-     
-       
-
-        <h3>Videos introductorios :</h3>
+        <h3>Videos Introductorios:</h3>
         <div>
-              <p> informacion de HTML.</p>
-             <img src="imagenes/html.png" alt="Imagen html" width="300" />
-            <!-- Video 1 -->
+            <p>Introducción a HTML:</p>
+            <img src="imagenes/html.png" alt="Imagen HTML" width="300" />
             <iframe width="560" height="315" src="https://www.youtube.com/embed/10GHKjgQIR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div>
-               <p> informacion de JavaScript.</p>
-             <img src="imagenes/js.png" alt="Imagen javascrip" width="300" />
-            <!-- Video 2 -->
+            <p>Introducción a JavaScript:</p>
+            <img src="imagenes/js.png" alt="Imagen JavaScript" width="300" />
             <iframe width="560" height="315" src="https://www.youtube.com/embed/riZbwRFMFuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div>
-            <p> informacion de CSS.</p>
-             <img src="imagenes/css.png" alt="Imagen css" width="300" />
-            <!-- Video 3 -->
+            <p>Introducción a CSS:</p>
+            <img src="imagenes/css.png" alt="Imagen CSS" width="300" />
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8cSo0ijtkzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
@@ -55,28 +51,28 @@
         <h2>Evaluación</h2>
         <form id="evaluacion-form" onsubmit="return calificar()">
             <p>1. ¿Qué es HTML?</p>
-            <input type="radio" name="pregunta1" value="a"> Lenguaje de programación<br>
-            <input type="radio" name="pregunta1" value="b"> Lenguaje de marcado<br>
-            <input type="radio" name="pregunta1" value="c"> Sistema operativo<br>
+            <input type="radio" name="pregunta1" value="a" id="html1"><label for="html1"> Lenguaje de programación</label><br>
+            <input type="radio" name="pregunta1" value="b" id="html2"><label for="html2"> Lenguaje de marcado</label><br>
+            <input type="radio" name="pregunta1" value="c" id="html3"><label for="html3"> Sistema operativo</label><br>
 
             <p>2. ¿Qué etiqueta se usa para insertar imágenes?</p>
-            <input type="radio" name="pregunta2" value="a"> <code>&lt;image&gt;</code><br>
-            <input type="radio" name="pregunta2" value="b"> <code>&lt;img&gt;</code><br>
+            <input type="radio" name="pregunta2" value="a" id="img1"><label for="img1">&lt;image&gt;</label><br>
+            <input type="radio" name="pregunta2" value="b" id="img2"><label for="img2">&lt;img&gt;</label><br>
 
             <p>3. Selecciona los lenguajes usados para el desarrollo web:</p>
-            <input type="checkbox" name="pregunta3" value="html"> HTML<br>
-            <input type="checkbox" name="pregunta3" value="css"> CSS<br>
-            <input type="checkbox" name="pregunta3" value="js"> JavaScript<br>
+            <input type="checkbox" name="pregunta3" value="html" id="html"><label for="html"> HTML</label><br>
+            <input type="checkbox" name="pregunta3" value="css" id="css"><label for="css"> CSS</label><br>
+            <input type="checkbox" name="pregunta3" value="js" id="js"><label for="js"> JavaScript</label><br>
 
             <p>4. ¿Qué es JavaScript?</p>
-            <select name="pregunta4">
+            <select name="pregunta4" id="js_select">
                 <option value="a">Lenguaje de programación</option>
                 <option value="b">Estilo para páginas web</option>
                 <option value="c">Editor de código</option>
             </select>
 
             <p>5. ¿Para qué sirve CSS?</p>
-            <textarea name="pregunta5"></textarea>
+            <textarea name="pregunta5" id="css_textarea"></textarea>
 
             <br>
             <button type="submit">Enviar Respuestas</button>
